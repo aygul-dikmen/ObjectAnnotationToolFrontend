@@ -4,8 +4,7 @@ import { BoxComponent } from './box.component';
 
 describe('BoxComponent', () => {
   let component: BoxComponent;
-  let fixture: ComponentFixture<BoxComponent>;
-
+  let fixture: ComponentFixture<BoxComponent>;  
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ BoxComponent ]
