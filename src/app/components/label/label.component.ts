@@ -10,21 +10,22 @@ import { LabelResponseModel } from 'src/app/models/labelResponseModel';
 })
 export class LabelComponent implements OnInit {
 
-  labels : Label[] = [];
-  apiUrl = "https://localhost:21745/api/values"
-  labelResponseModel:LabelResponseModel = {
-    data: this.labels,
-    success: false,
-    message: ''
-  };
-  constructor(private httpClient:HttpClient) { }
-
+  //labels : Label[] = [];
+  // apiUrl = "https://localhost:21745/api/labels"
+  // labelResponseModel:LabelResponseModel = {
+  //   data: this.labels,
+  //   success: false,
+  //   message: ''
+  // };
+  //constructor(private httpClient:HttpClient) { }
+  constructor() { }
+  
   ngOnInit(): void {
   }
-  getLabels(){
+  // getLabels(){
 
-    this.httpClient.get<LabelResponseModel>(this.apiUrl)
-    .subscribe((respose => {}));
-  }
+  //   this.httpClient.get<LabelResponseModel>(this.apiUrl)
+  //   .subscribe((respose => {}));
+  // }
 
 }

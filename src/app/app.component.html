@@ -1,13 +1,19 @@
 <div class = "container">
-  <app-navi></app-navi>
+  <div align="center"><h1>Object Annotation Tool</h1> </div>
+  
   <div class = "row">
+    <div class = "col = md-9">
+      <div style="text-align:center">
+        <div><img [src]="url" *ngIf="url"></div>
+        <p>
+          <input type="file" (change)="selectFile($event)">
+        </p>
+      </div>
+    </div>
     <div class = "col = md-3">
       <app-label></app-label>
     </div>
-    <div class = "col = md-9">
-      <app-box></app-box>
-    </div>
-  </div>
+  </div>  
 
   <router-outlet></router-outlet>
 </div>

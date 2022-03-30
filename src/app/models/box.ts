@@ -2,7 +2,7 @@ export interface Box
 {
     idBox:number,
     labels_idLabel:number,
-    photographs_idPhotograph:number,
+    images_idImage:number,
     boxPhoto:string,
     posX:number,
     posY:number,
